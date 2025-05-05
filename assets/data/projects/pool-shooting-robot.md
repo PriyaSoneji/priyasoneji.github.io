@@ -1,6 +1,6 @@
 # Pool Shooting Robot
 
-![Pool Shooting Robot](../../images/pool-shooting-robot.png)
+![Pool Shooting Robot](../../images/PoolShark1.JPG)
 
 Built a robot that makes automatic billiards cut shots.
 

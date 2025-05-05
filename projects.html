@@ -10,6 +10,8 @@ title: Projects
 </section>
 
 <script>
+// Base URL for assets (adjusted by Jekyll relative_url filter)
+const baseurl = "{{ '/' | relative_url }}";
 async function loadProjects() {
     try {
         const res = await fetch('{{ "/assets/data/projects.json" | relative_url }}');
@@ -17,8 +19,8 @@ async function loadProjects() {
         projects.sort((a, b) => new Date(b.date) - new Date(a.date));
         const list = document.getElementById('projects-list');
         for (const item of projects) {
-            // Fetch project markdown and split into blocks
-            const mdRes = await fetch(item.md);
+            // Fetch markdown using baseurl prefix
+            const mdRes = await fetch(`${baseurl}${item.md}`);
             const mdText = await mdRes.text();
             const parts = mdText.split(/\r?\n\s*\r?\n/);
             const rest = parts.slice(1).join('\n\n');
@@ -26,13 +28,16 @@ async function loadProjects() {
             const entry = document.createElement('article');
             entry.className = 'project-entry';
             entry.innerHTML = `<h2>${item.title}</h2><time datetime="${item.date}">${new Date(item.date).toLocaleDateString()}</time>`;
-            // Extract and insert first image
-            const imgMatch = parts[0].match(/!\[.*?\]\((.*?)\)/);
+            // Extract first image from markdown and normalize path
+            const imgMatch = mdText.match(/!\[.*?\]\((.*?)\)/);
             if (imgMatch) {
-                const imgPath = imgMatch[1].replace(/^(\.\.\/)+/, '');
-                const mdDir = item.md.substring(0, item.md.lastIndexOf('/'));
+                const rawPath = imgMatch[1];
+                // Remove leading '../' segments or leading slashes
+                const trimmed = rawPath.replace(/^\/+|^(?:\.\.\/)+/, '');
+                // Build full image src with baseurl
+                const src = `${baseurl}assets/${trimmed}`;
                 const imgEl = document.createElement('img');
-                imgEl.src = `/${mdDir}/${imgPath}`;
+                imgEl.src = src;
                 entry.appendChild(imgEl);
             }
             // Summary
