@@ -1,6 +1,6 @@
 # Robotics Season: 2020-2021 (FTC)
 
-![FTC Ultimate Goal](../../images/robotics-season-2020-2021-FTC.png)
+![FTC Ultimate Goal](/images/2020Robot.png)
 
 CAD design and autonomous programming for FTC Ultimate Goal robot.
 

@@ -1,6 +1,6 @@
 # Robotics Season: 2019-2020 (FTC)
 
-![FTC Skystone](../../images/robotics-season-2019-2020-FTC.png)
+![FTC Skystone](/images/2019Robot.png)
 
 CAD design and programming for FTC Skystone robot.
 

@@ -1,6 +1,7 @@
-# Robotics Season: 2018-2019 (FTC)
+# Robotics Season: 2018-2019 (FTC - Rover Ruckus)
 
-![FTC Intake Design](../../images/robotics-season-2018-2019-FTC.png)
+![FTC Robot](/images/2018Robot.png)
+
 
 Built and designed a multi-object intake for FTC robot using SolidWorks and 3D printing.
 
@@ -9,3 +10,5 @@ Built and designed a multi-object intake for FTC robot using SolidWorks and 3D p
 - CAD modeled intake mechanism in SolidWorks
 - Prototyped components with 3D printing
 - Optimized for high-throughput object collection and scoring
+
+![Intake Design](/images/2018RobotAtt.png)
