@@ -1,0 +1,11 @@
+# Robotics Season: 2019-2020 (FTC)
+
+![FTC Skystone](../../images/robotics-season-2019-2020-FTC.png)
+
+CAD design and programming for FTC Skystone robot.
+
+## Details
+
+- Passthrough intake design with dual-lift mechanism
+- Autonomous block pickup and stacking routines
+- Team advanced to FTC World Championships
