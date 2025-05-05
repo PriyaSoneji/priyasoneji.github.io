@@ -1,6 +1,6 @@
 # 6-DOF Arm Simulation
 
-![6-DOF Arm Simulation](../../images/6DOF.jpg)
+![6-DOF Arm Simulation](../../images/6DOF.JPG)
 
 Simulated a Mitsubishi PA-10C robotic arm for neuroendoscopy entry paths.
 
