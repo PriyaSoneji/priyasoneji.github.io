@@ -17,31 +17,45 @@ async function loadProjects() {
         projects.sort((a, b) => new Date(b.date) - new Date(a.date));
         const list = document.getElementById('projects-list');
         for (const item of projects) {
-            const entry = document.createElement('article');
-            entry.className = 'project-entry';
-            entry.innerHTML = `<h2>${item.title}</h2><time datetime="${item.date}">${new Date(item.date).toLocaleDateString()}</time>`;
-            const summaryDiv = document.createElement('div');
-            summaryDiv.className = 'summary';
-            summaryDiv.textContent = item.summary;
-            entry.appendChild(summaryDiv);
-            const moreDiv = document.createElement('div');
-            moreDiv.className = 'more';
-            const toggleBtn = document.createElement('button');
-            toggleBtn.className = 'toggle';
-            toggleBtn.textContent = 'See more';
-            entry.appendChild(moreDiv);
-            entry.appendChild(toggleBtn);
-            list.appendChild(entry);
+            // Fetch project markdown and split into blocks
             const mdRes = await fetch(item.md);
             const mdText = await mdRes.text();
             const parts = mdText.split(/\r?\n\s*\r?\n/);
             const rest = parts.slice(1).join('\n\n');
+            // Create project entry
+            const entry = document.createElement('article');
+            entry.className = 'project-entry';
+            entry.innerHTML = `<h2>${item.title}</h2><time datetime="${item.date}">${new Date(item.date).toLocaleDateString()}</time>`;
+            // Extract and insert first image
+            const imgMatch = parts[0].match(/!\[.*?\]\((.*?)\)/);
+            if (imgMatch) {
+                const imgPath = imgMatch[1].replace(/^(\.\.\/)+/, '');
+                const mdDir = item.md.substring(0, item.md.lastIndexOf('/'));
+                const imgEl = document.createElement('img');
+                imgEl.src = `${mdDir}/${imgPath}`;
+                entry.appendChild(imgEl);
+            }
+            // Summary
+            const summaryDiv = document.createElement('div');
+            summaryDiv.className = 'summary';
+            summaryDiv.textContent = item.summary;
+            entry.appendChild(summaryDiv);
+            // Detailed content
+            const moreDiv = document.createElement('div');
+            moreDiv.className = 'more';
             moreDiv.innerHTML = marked.parse(rest);
+            entry.appendChild(moreDiv);
+            // Toggle button
+            const toggleBtn = document.createElement('button');
+            toggleBtn.className = 'toggle';
+            toggleBtn.textContent = 'See more';
             toggleBtn.addEventListener('click', () => {
                 const showing = moreDiv.style.display === 'block';
                 moreDiv.style.display = showing ? 'none' : 'block';
                 toggleBtn.textContent = showing ? 'See more' : 'See less';
             });
+            entry.appendChild(toggleBtn);
+            list.appendChild(entry);
         }
     } catch (err) {
         console.error('Error loading projects:', err);
