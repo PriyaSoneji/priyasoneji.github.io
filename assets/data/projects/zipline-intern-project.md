@@ -1,6 +1,6 @@
 # Zipline Intern Project
 
-![Zipline Intern Project](../../images/zipline-intern-project.png)
+![Zipline Intern Project](../../images/ziplineharnessing.png)
 
 Worked on mechanical avionics for drone electrical systems.
 
