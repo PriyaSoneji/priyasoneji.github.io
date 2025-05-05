@@ -1,23 +1,5 @@
 [
   {
-    "title": "CAD Design Automation",
-    "date": "2024-02-15",
-    "summary": "Scripted parametric CAD models to reduce design time by 30%.",
-    "md": "assets/data/projects/cad-design-automation.md"
-  },
-  {
-    "title": "Thermal Simulation",
-    "date": "2023-11-01",
-    "summary": "Conducted FEA thermal analysis for heat exchanger optimization.",
-    "md": "assets/data/projects/thermal-simulation.md"
-  },
-  {
-    "title": "Robotic Arm Prototype",
-    "date": "2023-07-20",
-    "summary": "Developed and tested a 6-DOF robotic arm for pick-and-place operations.",
-    "md": "assets/data/projects/robotic-arm-prototype.md"
-  },
-  {
     "title": "Robotic Weeder",
     "date": "2024-12-01",
     "summary": "Autonomous robotic weeder using Raspberry Pi and filtering algorithm to reduce labor costs for small organic farms. Awarded 1st in Mechanical Engineering at Georgia Tech Spring 2025 Capstone Expo.",

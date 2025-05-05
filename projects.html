@@ -32,7 +32,7 @@ async function loadProjects() {
                 const imgPath = imgMatch[1].replace(/^(\.\.\/)+/, '');
                 const mdDir = item.md.substring(0, item.md.lastIndexOf('/'));
                 const imgEl = document.createElement('img');
-                imgEl.src = `${mdDir}/${imgPath}`;
+                imgEl.src = `/${mdDir}/${imgPath}`;
                 entry.appendChild(imgEl);
             }
             // Summary
