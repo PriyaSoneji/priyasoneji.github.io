@@ -22,19 +22,22 @@ async function loadProjects() {
             // Fetch markdown using baseurl prefix
             const mdRes = await fetch(`${baseurl}${item.md}`);
             const mdText = await mdRes.text();
-            const parts = mdText.split(/\r?\n\s*\r?\n/);
+
+            // Extract first image and remove it from detailed markdown to avoid duplication
+            const firstImgMatch = mdText.match(/!\[.*?\]\((.*?)\)/);
+            const cleanedMd = firstImgMatch ? mdText.replace(firstImgMatch[0], '') : mdText;
+            // Split cleaned markdown to separate title block from rest
+            const parts = cleanedMd.split(/\r?\n\s*\r?\n/);
             const rest = parts.slice(1).join('\n\n');
+
             // Create project entry
             const entry = document.createElement('article');
             entry.className = 'project-entry';
             entry.innerHTML = `<h2>${item.title}</h2><time datetime="${item.date}">${new Date(item.date).toLocaleDateString()}</time>`;
-            // Extract first image from markdown and normalize path
-            const imgMatch = mdText.match(/!\[.*?\]\((.*?)\)/);
-            if (imgMatch) {
-                const rawPath = imgMatch[1];
-                // Remove leading '../' segments or leading slashes
+            // Insert image before summary if found
+            if (firstImgMatch) {
+                const rawPath = firstImgMatch[1];
                 const trimmed = rawPath.replace(/^\/+|^(?:\.\.\/)+/, '');
-                // Build full image src with baseurl
                 const src = `${baseurl}assets/${trimmed}`;
                 const imgEl = document.createElement('img');
                 imgEl.src = src;
