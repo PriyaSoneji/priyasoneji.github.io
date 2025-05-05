@@ -90,7 +90,7 @@ footer {
 
 /* Add rounded corners to project images */
 .project-entry img {
-    width: 80%;
+    width: 70%;
     height: auto;
     max-height: 200px;
     border-radius: 12px;
