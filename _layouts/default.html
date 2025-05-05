@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - Priya Soneji</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="{{ '/index.html' | relative_url }}">About Me</a>
+      <a href="{{ '/projects.html' | relative_url }}">Projects</a>
+      <a href="{{ '/resume.html' | relative_url }}">Resume</a>
+    </nav>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>&copy; 2025 Priya Soneji</p>
+  </footer>
+</body>
+</html>

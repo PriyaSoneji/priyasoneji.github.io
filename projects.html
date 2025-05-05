@@ -1,76 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Priya Soneji</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="resume.html">Resume</a>
-        </nav>
-    </header>
-    <main>
-        <section id="projects">
-            <h1>Projects</h1>
-            <p>Here are some of my mechanical engineering projects:</p>
-            <div id="projects-list"></div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Priya Soneji</p>
-    </footer>
-    <script>
-        async function loadProjects() {
-            try {
-                const res = await fetch('assets/data/projects.json');
-                const projects = await res.json();
-                projects.sort((a, b) => new Date(b.date) - new Date(a.date));
-                const list = document.getElementById('projects-list');
-                for (const item of projects) {
-                    const entry = document.createElement('article');
-                    entry.className = 'project-entry';
-                    // Title and date
-                    entry.innerHTML = `<h2>${item.title}</h2><time datetime="${item.date}">${new Date(item.date).toLocaleDateString()}</time>`;
-                    // Summary
-                    const summaryDiv = document.createElement('div');
-                    summaryDiv.className = 'summary';
-                    summaryDiv.textContent = item.summary;
-                    entry.appendChild(summaryDiv);
-                    // More container
-                    const moreDiv = document.createElement('div');
-                    moreDiv.className = 'more';
-                    // Toggle button
-                    const toggleBtn = document.createElement('button');
-                    toggleBtn.className = 'toggle';
-                    toggleBtn.textContent = 'See more';
-                    entry.appendChild(moreDiv);
-                    entry.appendChild(toggleBtn);
-                    list.appendChild(entry);
-                    // Load markdown content
-                    const mdRes = await fetch(item.md);
-                    const mdText = await mdRes.text();
-                    // Extract parts after first blank line
-                    const parts = mdText.split(/\r?\n\s*\r?\n/);
-                    const rest = parts.slice(1).join('\n\n');
-                    moreDiv.innerHTML = marked.parse(rest);
-                    // Toggle behavior
-                    toggleBtn.addEventListener('click', () => {
-                        const showing = moreDiv.style.display === 'block';
-                        moreDiv.style.display = showing ? 'none' : 'block';
-                        toggleBtn.textContent = showing ? 'See more' : 'See less';
-                    });
-                }
-            } catch (err) {
-                console.error('Error loading projects:', err);
-            }
+---
+layout: default
+title: Projects
+---
+
+<section id="projects">
+  <h1>Projects</h1>
+  <p>Here are some of my mechanical engineering projects:</p>
+  <div id="projects-list"></div>
+</section>
+
+<script>
+async function loadProjects() {
+    try {
+        const res = await fetch('{{ "/assets/data/projects.json" | relative_url }}');
+        const projects = await res.json();
+        projects.sort((a, b) => new Date(b.date) - new Date(a.date));
+        const list = document.getElementById('projects-list');
+        for (const item of projects) {
+            const entry = document.createElement('article');
+            entry.className = 'project-entry';
+            entry.innerHTML = `<h2>${item.title}</h2><time datetime="${item.date}">${new Date(item.date).toLocaleDateString()}</time>`;
+            const summaryDiv = document.createElement('div');
+            summaryDiv.className = 'summary';
+            summaryDiv.textContent = item.summary;
+            entry.appendChild(summaryDiv);
+            const moreDiv = document.createElement('div');
+            moreDiv.className = 'more';
+            const toggleBtn = document.createElement('button');
+            toggleBtn.className = 'toggle';
+            toggleBtn.textContent = 'See more';
+            entry.appendChild(moreDiv);
+            entry.appendChild(toggleBtn);
+            list.appendChild(entry);
+            const mdRes = await fetch(item.md);
+            const mdText = await mdRes.text();
+            const parts = mdText.split(/\r?\n\s*\r?\n/);
+            const rest = parts.slice(1).join('\n\n');
+            moreDiv.innerHTML = marked.parse(rest);
+            toggleBtn.addEventListener('click', () => {
+                const showing = moreDiv.style.display === 'block';
+                moreDiv.style.display = showing ? 'none' : 'block';
+                toggleBtn.textContent = showing ? 'See more' : 'See less';
+            });
         }
-        loadProjects();
-    </script>
-</body>
-</html>
+    } catch (err) {
+        console.error('Error loading projects:', err);
+    }
+}
+loadProjects();
+</script>
