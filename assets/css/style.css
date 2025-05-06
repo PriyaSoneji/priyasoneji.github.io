@@ -42,32 +42,6 @@ main {
     position: relative; /* container for pseudo-elements */
 }
 
-main::before {
-    content: "";
-    position: absolute;
-    top: 25%;
-    left: 0;
-    width: 80px;
-    height: 80px;
-    background: url("../images/gears.svg") no-repeat center / contain;
-    transform: rotate(30deg);
-    opacity: 0.2;
-    pointer-events: none;
-}
-
-main::after {
-    content: "";
-    position: absolute;
-    top: 60%;
-    right: 0;
-    width: 100px;
-    height: 100px;
-    background: url("../images/gears2.svg") no-repeat center / contain;
-    transform: rotate(-45deg);
-    opacity: 0.15;
-    pointer-events: none;
-}
-
 section {
     margin-bottom: 3rem;
     text-align: left;
@@ -89,59 +63,6 @@ footer {
     border-bottom: 1px solid #333;
     padding-bottom: 1rem;
     text-align: left;
-}
-
-/* scattered sparse gears per project */
-.project-entry:nth-child(2n+1)::before {
-    content: "";
-    position: absolute;
-    top: 10%;
-    left: -30px;
-    width: 50px;
-    height: 50px;
-    background: url("../images/gears.svg") no-repeat center / contain;
-    transform: rotate(15deg);
-    opacity: 0.2;
-    pointer-events: none;
-}
-
-.project-entry:nth-child(2n+1)::after {
-    content: "";
-    position: absolute;
-    bottom: 10%;
-    right: -40px;
-    width: 40px;
-    height: 40px;
-    background: url("../images/gears2.svg") no-repeat center / contain;
-    transform: rotate(-20deg);
-    opacity: 0.15;
-    pointer-events: none;
-}
-
-.project-entry:nth-child(2n)::before {
-    content: "";
-    position: absolute;
-    bottom: 15%;
-    left: -40px;
-    width: 60px;
-    height: 60px;
-    background: url("../images/gears2.svg") no-repeat center / contain;
-    transform: rotate(30deg);
-    opacity: 0.18;
-    pointer-events: none;
-}
-
-.project-entry:nth-child(2n)::after {
-    content: "";
-    position: absolute;
-    top: 15%;
-    right: -30px;
-    width: 55px;
-    height: 55px;
-    background: url("../images/gears.svg") no-repeat center / contain;
-    transform: rotate(-25deg);
-    opacity: 0.22;
-    pointer-events: none;
 }
 
 .project-entry h2 {
