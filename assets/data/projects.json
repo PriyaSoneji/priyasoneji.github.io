@@ -1,91 +1,106 @@
 [
   {
     "title": "Robotic Weeder",
-    "date": "2024-12-01",
+    "startDate": "December 2024",
+    "endDate": "Present",
     "summary": "Autonomous robotic weeder using Raspberry Pi and filtering algorithm to reduce labor costs for small organic farms. Awarded 1st in Mechanical Engineering at Georgia Tech Spring 2025 Capstone Expo.",
     "md": "assets/data/projects/robotic-weeder.md"
   },
   {
     "title": "Pool Shooting Robot",
-    "date": "2024-09-01",
+    "startDate": "August 2024",
+    "endDate": "Present",
     "summary": "Automated billiards cut-shot robot using 3D printed rack-and-pinion system, ESP-32 camera, and YOLOv11 model with 99% accuracy; V2 under development.",
     "md": "assets/data/projects/pool-shooting-robot.md"
   },
   {
-    "title": "Tracking Microscope",
-    "date": "2019-01-01",
-    "summary": "Designed a $300 tracking microscope with OpenCV-based organism tracking; first-author peer-reviewed paper.",
-    "md": "assets/data/projects/trackoscope.md"
-  },
-  {
-    "title": "Tendon Driven Guidewires",
-    "date": "2023-01-01",
-    "summary": "Developed tendon attachment methods for guidewires with knots, epoxy, and laser-cut micro plates; achieved 2× required pulling force.",
-    "md": "assets/data/projects/tendon-driven-guidewires.md"
-  },
-  {
     "title": "SpaceX Intern Project",
-    "date": "2024-06-01",
+    "startDate": "June 2024",
+    "endDate": "June 2024",
     "summary": "Automated Starlink dish transfer system with pneumatic actuators and high-speed vacuum gantry; achieved 2000 units/hr throughput with zero failures in 50k cycles.",
     "md": "assets/data/projects/spacex-intern-project.md"
   },
   {
     "title": "Tesla Intern Project",
-    "date": "2024-03-01",
+    "startDate": "January 2024",
+    "endDate": "May 2024",
     "summary": "Created an automated 4K imaging system for drivetrain components and designed a new differential housing; uploads images to a custom web server.",
     "md": "assets/data/projects/tesla-intern-project.md"
   },
   {
     "title": "Zipline Intern Project",
-    "date": "2023-06-01",
+    "startDate": "May 2023",
+    "endDate": "August 2023",
     "summary": "Designed injection-molded parts and assembly fixtures for drone electrical systems; optimized for flight, thermal, and safety requirements.",
     "md": "assets/data/projects/zipline-intern-project.md"
   },
   {
     "title": "6-DOF Arm Kinematics",
-    "date": "2023-03-01",
+    "startDate": "March 2023",
+    "endDate": "March 2023",
     "summary": "Simulated Mitsubishi PA-10C arm with inverse kinematics and collision avoidance for neuroendoscopy paths in MATLAB.",
     "md": "assets/data/projects/6-dof-arm-simulation.md"
   },
   {
+    "title": "Tendon Driven Guidewires",
+    "startDate": "January 2023",
+    "endDate": "January 2023",
+    "summary": "Developed tendon attachment methods for guidewires with knots, epoxy, and laser-cut micro plates; achieved 2× required pulling force.",
+    "md": "assets/data/projects/tendon-driven-guidewires.md"
+  },
+  {
     "title": "Custom Drone and Flight Controller",
-    "date": "2022-07-01",
+    "startDate": "July 2022",
+    "endDate": "July 2022",
     "summary": "Built a $300 drone with custom ESP-8266 flight controller, 3D-printed components, and object-tracking for automated flight and landing.",
     "md": "assets/data/projects/custom-drone-and-flight-controller.md"
   },
   {
-    "title": "ME 2110 Class Robot",
-    "date": "2022-02-01",
-    "summary": "Constructed a task-performing robot for ME 2110 with 3D-printed and laser-cut parts; programmed autonomous operations in Arduino IDE.",
-    "md": "assets/data/projects/me-2110-robot.md"
-  },
-  {
     "title": "Boston Scientific Intern Project",
-    "date": "2022-06-01",
+    "startDate": "May 2022",
+    "endDate": "August 2022",
     "summary": "Optimized catheter sensor manufacturing with custom fixtures and DOEs; improved throughput 10× and reduced scrap 80%.",
     "md": "assets/data/projects/boston-scientific-intern-project.md"
   },
   {
     "title": "Wearable Stethoscope",
-    "date": "2022-03-01",
+    "startDate": "March 2022",
+    "endDate": "March 2022",
     "summary": "Developed wearable stethoscopes for COPD and CVD detection; fabricated nano-devices and applied MATLAB signal processing.",
     "md": "assets/data/projects/wearable-stethoscope.md"
   },
   {
+    "title": "ME 2110 Class Robot",
+    "startDate": "February 2022",
+    "endDate": "February 2022",
+    "summary": "Constructed a task-performing robot for ME 2110 with 3D-printed and laser-cut parts; programmed autonomous operations in Arduino IDE.",
+    "md": "assets/data/projects/me-2110-robot.md"
+  },
+  {
     "title": "FIRST FTC Robotics - Ultimate Goal",
-    "date": "2020-09-01",
+    "startDate": "September 2020",
+    "endDate": "May 2021",
     "summary": "Designed and programmed FTC Ultimate Goal robot using odometry and OpenCV for autonomous ring placement; reached World Championships.",
     "md": "assets/data/projects/robotics-season-2020-2021-FTC.md"
   },
   {
     "title": "FIRST FTC Robotics - Skystone",
-    "date": "2019-09-01",
+    "startDate": "September 2019",
+    "endDate": "May 2020",
     "summary": "Developed FTC Skystone robot with passthrough intake and dual lift for block stacking; reached World Championships.",
     "md": "assets/data/projects/robotics-season-2019-2020-FTC.md"
   },
   {
+    "title": "Tracking Microscope",
+    "startDate": "December 2019",
+    "endDate": "July 2024",
+    "summary": "Designed a $300 tracking microscope with OpenCV-based organism tracking; first-author peer-reviewed paper.",
+    "md": "assets/data/projects/trackoscope.md"
+  },
+  {
     "title": "FIRST FTC Robotics - Rover Ruckus",
-    "date": "2018-09-01",
+    "startDate": "September 2018",
+    "endDate": "May 2019",
     "summary": "Built multi-object intake for FTC robot using Solidworks and 3D printing to optimize scoring.",
     "md": "assets/data/projects/robotics-season-2018-2019-FTC.md"
   }

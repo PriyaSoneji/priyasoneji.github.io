@@ -16,7 +16,10 @@ async function loadProjects() {
     try {
         const res = await fetch('{{ "/assets/data/projects.json" | relative_url }}');
         const projects = await res.json();
-        projects.sort((a, b) => new Date(b.date) - new Date(a.date));
+        projects.sort((a, b) => {
+            const parseTime = item => item.endDate === 'Present' ? Infinity : new Date(item.endDate).getTime();
+            return parseTime(b) - parseTime(a);
+        });
         const list = document.getElementById('projects-list');
         for (const item of projects) {
             // Fetch markdown using baseurl prefix
@@ -33,7 +36,7 @@ async function loadProjects() {
             // Create project entry
             const entry = document.createElement('article');
             entry.className = 'project-entry';
-            entry.innerHTML = `<h2>${item.title}</h2><time datetime="${item.date}">${new Date(item.date).toLocaleDateString()}</time>`;
+            entry.innerHTML = `<h2>${item.title}</h2><p class="project-dates">${item.startDate} - ${item.endDate}</p>`;
             // Insert image before summary if found
             if (firstImgMatch) {
                 const rawPath = firstImgMatch[1];

@@ -11,3 +11,4 @@ Simulated a Mitsubishi PA-10C robotic arm for neuroendoscopy entry paths.
 - Analyzed joint trajectories and optimized motion efficiency
 
 ![6-DOF Simulation](../../images/6DOFSim.png)
+![6-DOF Simulation](../../images/6DOFAction.png)
