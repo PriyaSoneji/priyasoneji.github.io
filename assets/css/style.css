@@ -113,4 +113,5 @@ footer {
 .headshot {
     max-height: 400px;
     height: auto;
+    border-radius: 12px;
 }
