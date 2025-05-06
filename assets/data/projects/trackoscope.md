@@ -1,6 +1,6 @@
 # Trackoscope
 
-![Trackoscope](../../images/trackoscope.png)
+![Trackoscope](../../images/Trackoscope.png)
 
 Designed a $300 tracking microscope at Bhamla Lab to follow organisms microscopically.
 

@@ -8,12 +8,13 @@ body {
     line-height: 1.6;
 }
 
+/* Updated link colors to a cool blue */
 a, a:visited {
-    color: #ffffff;
+    color: #1E90FF;
     text-decoration: none;
 }
 a:hover {
-    color: #ffffff;
+    color: #63A4FF;
 }
 
 header {

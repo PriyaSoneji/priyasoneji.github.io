@@ -52,6 +52,12 @@ async function loadProjects() {
             const moreDiv = document.createElement('div');
             moreDiv.className = 'more';
             moreDiv.innerHTML = marked.parse(rest);
+            // Adjust image paths for any images in the detailed content
+            moreDiv.querySelectorAll('img').forEach(img => {
+                const rawPath = img.getAttribute('src');
+                const trimmed = rawPath.replace(/^\/+|^(?:\.\.\/)+/, '');
+                img.src = `${baseurl}assets/${trimmed}`;
+            });
             entry.appendChild(moreDiv);
             // Toggle button
             const toggleBtn = document.createElement('button');
