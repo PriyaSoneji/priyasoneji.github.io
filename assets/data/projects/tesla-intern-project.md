@@ -1,8 +1,6 @@
 # Tesla Intern Project
 
-![Tesla Intern Project](../../images/tesla-intern-project.png)
-
-Created an automated imaging system for drivetrain components.
+![Tesla Intern Project](../../images/tesladrive.jpg)
 
 ## Details
 

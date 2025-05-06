@@ -2,8 +2,6 @@
 
 ![Zipline Intern Project](../../images/ziplineharnessing.png)
 
-Worked on mechanical avionics for drone electrical systems.
-
 ## Details
 
 - Designed 18 injection-molded parts for busbars and electronics

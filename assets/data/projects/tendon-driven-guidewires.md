@@ -2,8 +2,6 @@
 
 ![Tendon Driven Guidewires](../../images/TendonPaper.png)
 
-In RoboMed Lab, developed tendon attachment methods for stainless steel guidewires using knots, epoxy, and femtosecond laser-cut micro plates.
-
 ## Details
 
 - Explored knots, epoxy bonds, and laser-cut micro plates for tendon attachment

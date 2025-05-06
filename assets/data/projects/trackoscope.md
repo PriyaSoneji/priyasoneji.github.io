@@ -2,8 +2,6 @@
 
 ![Trackoscope](../../images/Trackoscope.png)
 
-Designed a $300 tracking microscope at Bhamla Lab to follow organisms microscopically.
-
 ## Details
 
 - Six design iterations culminating in a scalable prototype

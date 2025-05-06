@@ -2,8 +2,6 @@
 
 ![6-DOF Arm](../../images/6DOF.JPG)
 
-Simulated a Mitsubishi PA-10C robotic arm for neuroendoscopy entry paths.
-
 ## Details
 
 - MATLAB-based inverse kinematics planning with collision avoidance

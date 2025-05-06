@@ -2,8 +2,6 @@
 
 ![FTC Skystone](../../images/2019Robot.png)
 
-CAD design and programming for FTC Skystone robot.
-
 ## Details
 
 - Passthrough intake design with dual-lift mechanism

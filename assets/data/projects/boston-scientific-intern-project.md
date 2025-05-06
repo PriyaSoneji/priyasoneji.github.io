@@ -1,8 +1,6 @@
 # Boston Scientific Intern Project
 
-![Boston Scientific Intern](../../images/boston-scientific-intern-project.png)
-
-Optimized a step in catheter sensor manufacturing.
+![Boston Scientific Intern](../../images/bostonsci.png)
 
 ## Details
 

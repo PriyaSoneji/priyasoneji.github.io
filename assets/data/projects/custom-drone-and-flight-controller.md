@@ -2,8 +2,6 @@
 
 ![Custom Drone](../../images/Drone.png)
 
-Built a $300 drone with a custom ESP-8266-based flight controller.
-
 ## Details
 
 - Designed and 3D-printed structural components

@@ -2,8 +2,6 @@
 
 ![Robotic Weeder](../../images/RoboWeeder.JPG)
 
-Building a robotic weeder for small organic farmers to reduce labor costs and improve produce quality.
-
 ## Details
 
 - Aluminum extrusion frame with adjustable wheelbase

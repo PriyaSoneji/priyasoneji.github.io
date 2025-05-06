@@ -2,8 +2,6 @@
 
 ![Pool Shooting Robot](../../images/PoolShark1.JPG)
 
-Built a robot that makes automatic billiards cut shots.
-
 ## Details
 
 - Custom 3D-printed curved rail and rack-and-pinion system

@@ -2,8 +2,6 @@
 
 ![FTC Ultimate Goal](../../images/2020Robot.png)
 
-CAD design and autonomous programming for FTC Ultimate Goal robot.
-
 ## Details
 
 - Odometry-based navigation and OpenCV vision for ring placement

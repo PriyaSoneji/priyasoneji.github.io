@@ -2,8 +2,6 @@
 
 ![SpaceX Intern Project](../../images/spacex.png)
 
-Automated Starlink dish transfer system on the manufacturing line.
-
 ## Details
 
 - Dish flipping and rotation using 4 pneumatic actuators
