@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    text-align: left;
 }
 
 /* Updated link colors to a cool blue */
@@ -36,10 +37,12 @@ main {
     padding: 3rem;
     max-width: 900px;
     margin: auto;
+    text-align: left;
 }
 
 section {
     margin-bottom: 3rem;
+    text-align: left;
 }
 
 footer {
@@ -61,6 +64,7 @@ footer {
 
 .project-entry h2 {
     margin: 0 0 0.5rem;
+    text-align: left;
 }
 
 .project-entry time {
@@ -68,6 +72,7 @@ footer {
     font-size: 0.9rem;
     color: #aaa;
     margin-bottom: 0.5rem;
+    text-align: left;
 }
 
 /* Hide detailed markdown sections by default */
