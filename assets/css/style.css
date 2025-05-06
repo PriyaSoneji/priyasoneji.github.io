@@ -38,30 +38,34 @@ main {
     max-width: 900px;
     margin: auto;
     text-align: left;
-    position: relative; /* container for gears */
-    padding-left: 100px;
-    padding-right: 100px;
+    /* remove background patterns; gears will be per-entry */
+    position: relative; /* container for pseudo-elements */
 }
 
-/* Sparse white gears around main content */
-main::before, main::after {
+main::before {
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 80px;
-    background-repeat: repeat-y;
-    background-size: 80px 300px; /* vertical spacing for sparsity */
-    z-index: -1;
-    filter: brightness(0) invert(1); /* turn gears white */
-}
-main::before {
+    top: 25%;
     left: 0;
-    background-image: url("../images/gears.svg");
+    width: 80px;
+    height: 80px;
+    background: url("../images/gears.svg") no-repeat center / contain;
+    transform: rotate(30deg);
+    opacity: 0.2;
+    pointer-events: none;
 }
+
 main::after {
+    content: "";
+    position: absolute;
+    top: 60%;
     right: 0;
-    background-image: url("../images/gears2.svg");
+    width: 100px;
+    height: 100px;
+    background: url("../images/gears2.svg") no-repeat center / contain;
+    transform: rotate(-45deg);
+    opacity: 0.15;
+    pointer-events: none;
 }
 
 section {
@@ -80,10 +84,64 @@ footer {
 }
 
 .project-entry {
+    position: relative; /* container for gear pseudo-elements */
     margin-bottom: 2rem;
     border-bottom: 1px solid #333;
     padding-bottom: 1rem;
     text-align: left;
+}
+
+/* scattered sparse gears per project */
+.project-entry:nth-child(2n+1)::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: -30px;
+    width: 50px;
+    height: 50px;
+    background: url("../images/gears.svg") no-repeat center / contain;
+    transform: rotate(15deg);
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.project-entry:nth-child(2n+1)::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/gears2.svg") no-repeat center / contain;
+    transform: rotate(-20deg);
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+.project-entry:nth-child(2n)::before {
+    content: "";
+    position: absolute;
+    bottom: 15%;
+    left: -40px;
+    width: 60px;
+    height: 60px;
+    background: url("../images/gears2.svg") no-repeat center / contain;
+    transform: rotate(30deg);
+    opacity: 0.18;
+    pointer-events: none;
+}
+
+.project-entry:nth-child(2n)::after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: -30px;
+    width: 55px;
+    height: 55px;
+    background: url("../images/gears.svg") no-repeat center / contain;
+    transform: rotate(-25deg);
+    opacity: 0.22;
+    pointer-events: none;
 }
 
 .project-entry h2 {

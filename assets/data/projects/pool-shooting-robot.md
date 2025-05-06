@@ -13,3 +13,5 @@ Built a robot that makes automatic billiards cut shots.
 - V2 in development: self-contained pool stick with Stewart platform and CAM-driven shot
 
 ![Pool Shooting Robot](../../images/PoolShark2.JPG)
+![Pool Shooting Robot](../../images/PoolSharkV1.png)
+![Pool Shooting Robot](../../images/PoolShot.png)
