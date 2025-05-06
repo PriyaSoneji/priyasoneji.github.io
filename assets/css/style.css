@@ -7,32 +7,6 @@ body {
     padding: 0;
     line-height: 1.6;
     text-align: left;
-    /* add padding for gear space */
-    position: relative;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-/* Gear sidebars */
-body::before, body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    width: 80px;
-    height: 100%;
-    background-repeat: repeat-y;
-    background-size: 80px;
-    z-index: -1;
-}
-
-body::before {
-    left: 0;
-    background-image: url("../images/gears.svg");
-}
-
-body::after {
-    right: 0;
-    background-image: url("../images/gears2.svg");
 }
 
 /* Updated link colors to a cool blue */
@@ -64,6 +38,30 @@ main {
     max-width: 900px;
     margin: auto;
     text-align: left;
+    position: relative; /* container for gears */
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* Sparse white gears around main content */
+main::before, main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    background-repeat: repeat-y;
+    background-size: 80px 300px; /* vertical spacing for sparsity */
+    z-index: -1;
+    filter: brightness(0) invert(1); /* turn gears white */
+}
+main::before {
+    left: 0;
+    background-image: url("../images/gears.svg");
+}
+main::after {
+    right: 0;
+    background-image: url("../images/gears2.svg");
 }
 
 section {
