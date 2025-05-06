@@ -1,6 +1,6 @@
 # Wearable Stethoscope
 
-![Wearable Stethoscope](../../images/wearable-stethoscope.png)
+![Wearable Stethoscope](../../images/stethoscope.png)
 
 Worked on detecting COPD and CVD with wearable stethoscopes under Dr. Sung Hoon Lee.
 

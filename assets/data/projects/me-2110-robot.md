@@ -1,6 +1,6 @@
 # ME 2110 Robot
 
-![ME 2110 Robot](../../images/me-2110-robot.png)
+![ME 2110 Robot](../../images/2110Robot.png)
 
 Built a task-performing robot for Georgia Tech’s ME 2110 course.
 

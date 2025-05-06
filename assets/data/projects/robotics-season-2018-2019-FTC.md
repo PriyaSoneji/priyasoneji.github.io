@@ -11,4 +11,4 @@ Built and designed a multi-object intake for FTC robot using SolidWorks and 3D p
 - Prototyped components with 3D printing
 - Optimized for high-throughput object collection and scoring
 
-![Intake Design](/images/2018RobotAtt.png)
+![Intake Design](../../images/2018RobotAtt.png)

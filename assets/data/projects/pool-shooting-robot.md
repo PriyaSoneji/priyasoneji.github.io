@@ -11,3 +11,5 @@ Built a robot that makes automatic billiards cut shots.
 - ESP-32 camera for image capture
 - YOLOv11 model trained on 500 labeled images for shot angle detection (99% accuracy)
 - V2 in development: self-contained pool stick with Stewart platform and CAM-driven shot
+
+![Pool Shooting Robot](../../images/PoolShark2.JPG)
