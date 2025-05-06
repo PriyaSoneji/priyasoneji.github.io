@@ -12,7 +12,7 @@
     "md": "assets/data/projects/pool-shooting-robot.md"
   },
   {
-    "title": "Trackoscope",
+    "title": "Tracking Microscope",
     "date": "2019-01-01",
     "summary": "Designed a $300 tracking microscope with OpenCV-based organism tracking; first-author peer-reviewed paper.",
     "md": "assets/data/projects/trackoscope.md"
@@ -42,7 +42,7 @@
     "md": "assets/data/projects/zipline-intern-project.md"
   },
   {
-    "title": "6-DOF Arm Simulation",
+    "title": "6-DOF Arm Kinematics",
     "date": "2023-03-01",
     "summary": "Simulated Mitsubishi PA-10C arm with inverse kinematics and collision avoidance for neuroendoscopy paths in MATLAB.",
     "md": "assets/data/projects/6-dof-arm-simulation.md"
@@ -54,7 +54,7 @@
     "md": "assets/data/projects/custom-drone-and-flight-controller.md"
   },
   {
-    "title": "ME 2110 Robot",
+    "title": "ME 2110 Class Robot",
     "date": "2022-02-01",
     "summary": "Constructed a task-performing robot for ME 2110 with 3D-printed and laser-cut parts; programmed autonomous operations in Arduino IDE.",
     "md": "assets/data/projects/me-2110-robot.md"
@@ -72,19 +72,19 @@
     "md": "assets/data/projects/wearable-stethoscope.md"
   },
   {
-    "title": "Robotics Season: 2020-2021 (FTC)",
+    "title": "FIRST FTC Robotics - Ultimate Goal",
     "date": "2020-09-01",
     "summary": "Designed and programmed FTC Ultimate Goal robot using odometry and OpenCV for autonomous ring placement; reached World Championships.",
     "md": "assets/data/projects/robotics-season-2020-2021-FTC.md"
   },
   {
-    "title": "Robotics Season: 2019-2020 (FTC)",
+    "title": "FIRST FTC Robotics - Skystone",
     "date": "2019-09-01",
     "summary": "Developed FTC Skystone robot with passthrough intake and dual lift for block stacking; reached World Championships.",
     "md": "assets/data/projects/robotics-season-2019-2020-FTC.md"
   },
   {
-    "title": "Robotics Season: 2018-2019 (FTC)",
+    "title": "FIRST FTC Robotics - Rover Ruckus",
     "date": "2018-09-01",
     "summary": "Built multi-object intake for FTC robot using Solidworks and 3D printing to optimize scoring.",
     "md": "assets/data/projects/robotics-season-2018-2019-FTC.md"
