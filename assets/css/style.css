@@ -109,3 +109,8 @@ footer {
     object-fit: contain;
     border-radius: 12px;
 }
+
+.headshot {
+    max-height: 400px;
+    height: auto;
+}
