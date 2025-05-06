@@ -97,7 +97,7 @@ footer {
 
 /* Add rounded corners to project images */
 .project-entry img {
-    display: inline-block; /* allow text-align centering */
+    display: block; /* center image as block */
     margin: 0 auto 1rem;
     max-width: 100%;
     max-height: 300px;
