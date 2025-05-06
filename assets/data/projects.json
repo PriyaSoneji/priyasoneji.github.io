@@ -15,8 +15,8 @@
   },
   {
     "title": "SpaceX Intern Project",
-    "startDate": "June 2024",
-    "endDate": "June 2024",
+    "startDate": "May 2024",
+    "endDate": "August 2024",
     "summary": "Automated Starlink dish transfer system with pneumatic actuators and high-speed vacuum gantry; achieved 2000 units/hr throughput with zero failures in 50k cycles.",
     "md": "assets/data/projects/spacex-intern-project.md"
   },
