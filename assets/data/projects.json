@@ -3,76 +3,76 @@
     "title": "Robotic Weeder",
     "startDate": "December 2024",
     "endDate": "Present",
-    "summary": "Autonomous robotic weeder using Raspberry Pi and filtering algorithm to reduce labor costs for small organic farms. Awarded 1st in Mechanical Engineering at Georgia Tech Spring 2025 Capstone Expo.",
+    "summary": "An affordable and adjustable robotic platform to enable small farmers to automate farm tasks. Currenlty developing a weeder attachment for the platform.",
     "md": "assets/data/projects/robotic-weeder.md"
   },
   {
     "title": "Pool Shooting Robot",
     "startDate": "August 2024",
     "endDate": "Present",
-    "summary": "Automated billiards cut-shot robot using 3D printed rack-and-pinion system, ESP-32 camera, and YOLOv11 model with 99% accuracy; V2 under development.",
+    "summary": "Standalone pool (billiards) playing robot that can be used with any table and is the size of standard pool cue.",
     "md": "assets/data/projects/pool-shooting-robot.md"
   },
   {
     "title": "SpaceX Intern Project",
     "startDate": "May 2024",
     "endDate": "August 2024",
-    "summary": "Automated Starlink dish transfer system with pneumatic actuators and high-speed vacuum gantry; achieved 2000 units/hr throughput with zero failures in 50k cycles.",
+    "summary": "Automated Starlink Mini dish transfer with pneumatic actuators and a high-speed gantry; achieved 2000 units/hr throughput with zero failures in 50k cycles.",
     "md": "assets/data/projects/spacex-intern-project.md"
   },
   {
     "title": "Tesla Intern Project",
     "startDate": "January 2024",
     "endDate": "May 2024",
-    "summary": "Created an automated 4K imaging system for drivetrain components and designed a new differential housing; uploads images to a custom web server.",
+    "summary": "Created an automated 4K imaging system for drivetrain components and designed a new differential housing.",
     "md": "assets/data/projects/tesla-intern-project.md"
   },
   {
     "title": "Zipline Intern Project",
     "startDate": "May 2023",
     "endDate": "August 2023",
-    "summary": "Designed injection-molded parts and assembly fixtures for drone electrical systems; optimized for flight, thermal, and safety requirements.",
+    "summary": "Designed 18 injection-molded parts and assembly fixtures for the drone electrical systems; optimized for flight, thermal, and safety requirements.",
     "md": "assets/data/projects/zipline-intern-project.md"
   },
   {
-    "title": "6-DOF Arm Kinematics",
-    "startDate": "March 2023",
-    "endDate": "March 2023",
-    "summary": "Simulated Mitsubishi PA-10C arm with inverse kinematics and collision avoidance for neuroendoscopy paths in MATLAB.",
+    "title": "6-DOF Surgical Arm Kinematics",
+    "startDate": "January 2023",
+    "endDate": "May 2023",
+    "summary": "Simulated the Mitsubishi PA-10C arm with inverse kinematics and collision avoidance for neuroendoscopy insertion paths.",
     "md": "assets/data/projects/6-dof-arm-simulation.md"
   },
   {
     "title": "Tendon Driven Guidewires",
-    "startDate": "January 2023",
-    "endDate": "January 2023",
-    "summary": "Developed tendon attachment methods for guidewires with knots, epoxy, and laser-cut micro plates; achieved 2× required pulling force.",
+    "startDate": "August 2023",
+    "endDate": "June 2024",
+    "summary": "Developed and evaluated tendon attachment methods for guidewires with knots, epoxy, and laser-cut micro plates.",
     "md": "assets/data/projects/tendon-driven-guidewires.md"
   },
   {
     "title": "Custom Drone and Flight Controller",
-    "startDate": "July 2022",
+    "startDate": "May 2022",
     "endDate": "July 2022",
-    "summary": "Built a $300 drone with custom ESP-8266 flight controller, 3D-printed components, and object-tracking for automated flight and landing.",
+    "summary": "Built a $300 drone with custom ESP-8266 flight controller and 3D-printed components.",
     "md": "assets/data/projects/custom-drone-and-flight-controller.md"
   },
   {
     "title": "Boston Scientific Intern Project",
     "startDate": "May 2022",
     "endDate": "August 2022",
-    "summary": "Optimized catheter sensor manufacturing with custom fixtures and DOEs; improved throughput 10× and reduced scrap 80%.",
+    "summary": "Optimized catheter sensor manufacturing with custom vacuum fixtures; improved throughput 10× and reduced scrap 80%.",
     "md": "assets/data/projects/boston-scientific-intern-project.md"
   },
   {
     "title": "Wearable Stethoscope",
-    "startDate": "March 2022",
-    "endDate": "March 2022",
+    "startDate": "January 2022",
+    "endDate": "May 2022",
     "summary": "Developed wearable stethoscopes for COPD and CVD detection; fabricated nano-devices and applied MATLAB signal processing.",
     "md": "assets/data/projects/wearable-stethoscope.md"
   },
   {
     "title": "ME 2110 Class Robot",
-    "startDate": "February 2022",
-    "endDate": "February 2022",
+    "startDate": "August 2022",
+    "endDate": "December 2022",
     "summary": "Constructed a task-performing robot for ME 2110 with 3D-printed and laser-cut parts; programmed autonomous operations in Arduino IDE.",
     "md": "assets/data/projects/me-2110-robot.md"
   },
@@ -80,28 +80,28 @@
     "title": "FIRST FTC Robotics - Ultimate Goal",
     "startDate": "September 2020",
     "endDate": "May 2021",
-    "summary": "Designed and programmed FTC Ultimate Goal robot using odometry and OpenCV for autonomous ring placement; reached World Championships.",
+    "summary": "Designed and programmed FTC Ultimate Goal robot using odometry and OpenCV for autonomous ring shooting. Designed a self-aligning turret",
     "md": "assets/data/projects/robotics-season-2020-2021-FTC.md"
   },
   {
     "title": "FIRST FTC Robotics - Skystone",
     "startDate": "September 2019",
     "endDate": "May 2020",
-    "summary": "Developed FTC Skystone robot with passthrough intake and dual lift for block stacking; reached World Championships.",
+    "summary": "Developed FTC Skystone robot with passthrough intake and dual lift for block stacking",
     "md": "assets/data/projects/robotics-season-2019-2020-FTC.md"
   },
   {
     "title": "Tracking Microscope",
     "startDate": "December 2019",
     "endDate": "July 2024",
-    "summary": "Designed a $300 tracking microscope with OpenCV-based organism tracking; first-author peer-reviewed paper.",
+    "summary": "Developed a low-cost object tracking microscope to enable researchers to observe microogranisms for long periods of time.",
     "md": "assets/data/projects/trackoscope.md"
   },
   {
     "title": "FIRST FTC Robotics - Rover Ruckus",
     "startDate": "September 2018",
     "endDate": "May 2019",
-    "summary": "Built multi-object intake for FTC robot using Solidworks and 3D printing to optimize scoring.",
+    "summary": "Built multi-object intake for FTC Rover Ruckus robot with filtering scoop and lift.",
     "md": "assets/data/projects/robotics-season-2018-2019-FTC.md"
   }
 ]
