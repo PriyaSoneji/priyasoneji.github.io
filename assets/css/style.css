@@ -56,7 +56,7 @@ footer {
     margin-bottom: 2rem;
     border-bottom: 1px solid #333;
     padding-bottom: 1rem;
-    text-align: center; /* center all children by default */
+    text-align: left;
 }
 
 .project-entry h2 {

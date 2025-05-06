@@ -10,4 +10,4 @@ Simulated a Mitsubishi PA-10C robotic arm for neuroendoscopy entry paths.
 - Simulated entry paths on hydrogel brain models
 - Analyzed joint trajectories and optimized motion efficiency
 
-![6-DOF Simulation](../../images/6DOFSim.JPG)
+![6-DOF Simulation](../../images/6DOFSim.png)
