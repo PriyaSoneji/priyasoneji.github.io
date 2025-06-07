@@ -8,10 +8,7 @@
 - Stepper motors and Arduino on linear rails for motion control
 - Custom optics and OpenCV-based tracking with GUI
 - Built with SolidWorks, 3D printing, and water-jetting
-
-## Result
-
-Successfully tracked fast organisms and analyzed motion data with ML tools.
+- Successfully tracked fast organisms and analyzed motion data with ML tools
 
 ## Publication
 
