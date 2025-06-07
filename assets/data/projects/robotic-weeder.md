@@ -1,4 +1,4 @@
-# Robotic Weeder
+# AgRobotics Platform
 
 ![Robotic Weeder](../../images/RoboWeeder.JPG)
 

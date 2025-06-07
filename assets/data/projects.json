@@ -1,10 +1,11 @@
 [
   {
-    "title": "Robotic Weeder",
+    "title": "AgRobotics Startup (DirtWorks)",
     "startDate": "December 2024",
     "endDate": "Present",
-    "summary": "An affordable and adjustable robotic platform to enable small farmers to automate farm tasks. Currenlty developing a weeder attachment for the platform.",
-    "md": "assets/data/projects/robotic-weeder.md"
+    "summary": "Developing an affordable and adjustable robotic platform to enable small farmers to automate farm tasks. Currenlty developing a weeder attachment for the platform.",
+    "md": "assets/data/projects/robotic-weeder.md",
+    "video": "https://youtu.be/kj4Den8aV2M?si=E54hotbJ-FMQm-4q"
   },
   {
     "title": "Pool Shooting Robot",

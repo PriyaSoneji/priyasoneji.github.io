@@ -62,6 +62,15 @@ async function loadProjects() {
                 img.src = `${baseurl}assets/${trimmed}`;
             });
             entry.appendChild(moreDiv);
+            // Embed YouTube video if provided
+            if (item.video) {
+                const videoDiv = document.createElement('div');
+                videoDiv.className = 'video';
+                // Extract YouTube ID and create embed URL
+                const videoId = item.video.split('/').pop().split('?')[0];
+                videoDiv.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+                moreDiv.insertBefore(videoDiv, moreDiv.firstChild);
+            }
             // Toggle button
             const toggleBtn = document.createElement('button');
             toggleBtn.className = 'toggle';
