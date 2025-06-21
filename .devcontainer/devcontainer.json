@@ -1,0 +1,17 @@
+{
+    "name": "Jekyll Local Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "workspaceFolder": "/workspace",
+    "forwardPorts": [4000],
+    "customizations": {
+        "vscode": {
+            "settings": {}
+        }
+    },
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+    ],
+    "remoteUser": "root"
+}
