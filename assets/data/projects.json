@@ -12,7 +12,8 @@
     "startDate": "August 2024",
     "endDate": "Present",
     "summary": "Standalone pool (billiards) playing robot that can be used with any table and is the size of standard pool cue.",
-    "md": "assets/data/projects/pool-shooting-robot.md"
+    "md": "assets/data/projects/pool-shooting-robot.md",
+    "video": "https://youtu.be/RRSAJjFnbZ8"
   },
   {
     "title": "SpaceX Intern Project",
@@ -96,7 +97,8 @@
     "startDate": "December 2019",
     "endDate": "July 2024",
     "summary": "Developed a low-cost object tracking microscope to enable researchers to observe microogranisms for long periods of time.",
-    "md": "assets/data/projects/trackoscope.md"
+    "md": "assets/data/projects/trackoscope.md",
+    "video": "https://www.youtube.com/watch?v=RlSH78FnuhY&ab_channel=BhamlaLab"
   },
   {
     "title": "FIRST FTC Robotics - Rover Ruckus",
