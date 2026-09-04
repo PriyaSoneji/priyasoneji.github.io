@@ -1,8 +1,16 @@
 [
   {
+    "title": "Founding Engineer at Terranova",
+    "startDate": "August 2025",
+    "endDate": "Present",
+    "summary": "Developing a large-scale robot network to terraform land, restore degraded habitats, and protect coastlines from flooding. Designed two full construction-sized robotic systems from scratch in three months.",
+    "md": "assets/data/projects/terranova-rover.md",
+    "video": "https://youtu.be/B4RQvgdC1TI?si=v8qtlrCup5elAArF"
+  },
+  {
     "title": "AgRobotics Platform (DirtWorks)",
     "startDate": "December 2024",
-    "endDate": "Present",
+    "endDate": "August 2025",
     "summary": "Developing an affordable and adjustable robotic platform to enable small farmers to automate farm tasks. Currenlty developing a weeder attachment for the platform.",
     "md": "assets/data/projects/robotic-weeder.md",
     "video": "https://youtu.be/kj4Den8aV2M?si=E54hotbJ-FMQm-4q"
@@ -10,7 +18,7 @@
   {
     "title": "Pool Shooting Robot",
     "startDate": "August 2024",
-    "endDate": "Present",
+    "endDate": "July 2025",
     "summary": "Standalone pool (billiards) playing robot that can be used with any table and is the size of standard pool cue.",
     "md": "assets/data/projects/pool-shooting-robot.md",
     "video": "https://youtu.be/RRSAJjFnbZ8"

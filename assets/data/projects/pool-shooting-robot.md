@@ -11,6 +11,7 @@
 - Adjustable spring-based shooting mechanism delivering 100+ N force
 
 ![Pool Shooting Robot](../../images/PoolShark2.JPG)
+![Pool Shooting Robot](../../images/shark_release.png)
 
 - YOLOv11 model trained on 500 labeled images for shot angle detection (99% accuracy)
 
