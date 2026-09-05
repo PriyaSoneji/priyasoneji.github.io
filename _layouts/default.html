@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="j1591QI-RzIZvk9EqX_rykeI7TpYTTMnA1kghaSfFnY" />
-  <title>{{ page.title }} - Priya Soneji</title>
+  <!-- Page Title & SEO Meta -->
+  {% if page.title and page.title != "About" %}
+  <title>{{ page.title }} | Priya Soneji - Mechanical Engineer</title>
+  {% else %}
+  <title>Priya Soneji | Mechanical Engineer & Roboticist</title>
+  {% endif %}
+
+  <meta name="description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords"
+    content="Priya Soneji, Priya Soneji Mechanical Engineer, Robotics, Terranova, Hardware Engineer, Mechatronics, Bay Area, Mechanical Design, Portfolio">
+  <meta name="author" content="Priya Soneji">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+  <!-- Open Graph / Social Cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <meta property="og:title"
+    content="{% if page.title and page.title != 'About' %}{{ page.title }} | Priya Soneji{% else %}Priya Soneji | Mechanical Engineer & Roboticist{% endif %}">
+  <meta property="og:description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:image" content="{{ '/assets/images/Headshot.jpg' | absolute_url }}">
+  <meta property="og:site_name" content="Priya Soneji Portfolio">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title"
+    content="{% if page.title and page.title != 'About' %}{{ page.title }} | Priya Soneji{% else %}Priya Soneji | Mechanical Engineer & Roboticist{% endif %}">
+  <meta name="twitter:description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{{ '/assets/images/Headshot.jpg' | absolute_url }}">
+  <meta name="twitter:site" content="@priyasoneji">
+  <meta name="twitter:creator" content="@priyasoneji">
+
+  <!-- Structured Data (JSON-LD) for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Priya Soneji",
+    "url": "https://priyasoneji.github.io",
+    "image": "{{ '/assets/images/Headshot.jpg' | absolute_url }}",
+    "jobTitle": "Mechanical Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Terranova"
+    },
+    "description": "Bay Area–based mechanical engineer with a passion for robotics, mechanical design, and rapid prototyping.",
+    "sameAs": [
+      "https://www.linkedin.com/in/priya-soneji/",
+      "https://github.com/priyasoneji",
+      "https://x.com/priyasoneji"
+    ]
+  }
+  </script>
+
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/images/Logo.ico' | relative_url }}" type="image/x-icon">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
+
 <body>
   <header>
     <nav>
@@ -24,4 +82,5 @@
     <p>&copy; 2025 Priya Soneji</p>
   </footer>
 </body>
+
 </html>
